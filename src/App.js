@@ -262,7 +262,7 @@ export default function App() {
             )}
             {layout === "vr" && <Configurator />}
             <Routes>
-              <Route path="login" element={<Navigate to="/auth/login" />} />
+              {/* <Route path="login" element={<Navigate to="/auth/login" />} />
               <Route
                 path="register"
                 element={<Navigate to="/auth/register" />}
@@ -270,7 +270,7 @@ export default function App() {
               <Route
                 path="forgot-password"
                 element={<Navigate to="/auth/forgot-password" />}
-              />
+              /> */}
               {getRoutes(routes)}
               <Route path="*" element={<Navigate to="/dashboard" />} />
             </Routes>
@@ -299,10 +299,10 @@ export default function App() {
           )}
           {layout === "vr" && <Configurator />}
           <Routes>
-            <Route path="/auth/login" element={<Login />} />
+            {/* <Route path="/auth/login" element={<Login />} />
             <Route path="/auth/register" element={<Register />} />
             <Route path="/auth/forgot-password" element={<ForgotPassword />} />
-            <Route path="/auth/reset-password" element={<ResetPassword />} />
+            <Route path="/auth/reset-password" element={<ResetPassword />} /> */}
             <Route
               exact
               path="user-profile"
